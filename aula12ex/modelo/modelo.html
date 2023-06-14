@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>
+                <label for="anon">Ano de nascimento:</label>
+                <input type="number" name="anon" id="anon" required min="1923" max="2007"><br>
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" name="sexn" id="sexm" checked>
+                <label for="sexm">Masculino</label>
+                <input type="radio" name="sexn" id="sexf">
+                <label for="sexf">Feminino</label>
+            </p>
+            <p><input type="submit" value="Verificar" onclick="clicou()"></p>
+        </div>
+        <div id="resp">
+            Preencha os dados acima para ver o resultado!
+        </div>
+    </section>
+    <footer>
+        &copy;Toguinhakk
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="pais">Qual seu país?</label>
+    <input type="text" name="pais" id="pais"><br>
+    <input onclick="clicou()" type="submit" value="Enviar">
+    <div id="res">Defina seu país</div>
+    <script>
+        function clicou(){
+            p = document.getElementById('pais')
+            r = document.getElementById('res')
+            pa = p.value
+            ra = r.value
+            r.innerHTML = (`Você vive em ${pa} <br>`)
+            if(p.value =='Brasil'){
+               r.innerText += ('Você é Brasileiro')
+            }
+            else{ 
+                r.innerText += ('Você é estrangeiro')
+            }
+        }
+    </script>
+</body>
+</html>
